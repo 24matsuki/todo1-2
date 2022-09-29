@@ -128,27 +128,6 @@ function App() {
           onHandleEditClick={handleEditClick}
           onHandleDeleteClick={handleDeleteClick}
         />
-        {/* {todos.map((todo) => (
-          <li key={todo.key}>
-            <select onChange={(e) => handleSelectChange(todo.key, e.target.value)} >
-              {todoStatuses.map((todoStatus) => (
-                <option
-                  selected={todo.status === todoStatus.value}
-                  value={todoStatus.value}
-                >
-                  {todoStatus.textContent}
-                </option>
-              ))}
-            </select>
-            {todo.value}
-            <button onClick={() => handleEditClick(todo)}>
-              編集
-            </button>
-            <button onClick={() => handleDeleteClick(todo.key)}>
-              削除
-            </button>
-          </li>
-        ))} */}
       </ul>
     </div>
   );
