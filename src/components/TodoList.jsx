@@ -5,10 +5,10 @@ export const TodoList = (props) => {
     <ul>
       {todos.map((todo) => (
         <li key={todo.key}>
-          <select onChange={(e) => onHandleSelectChange(todo.key, e.target.value)} >
+          <select value={todo.status} onChange={(e) => onHandleSelectChange(todo.key, e.target.value)} >
             {todoStatuses.map((todoStatus) => (
               <option
-                selected={todo.status === todoStatus.value}
+                // selected={todo.status === todoStatus.value}
                 value={todoStatus.value}
               >
                 {todoStatus.textContent}

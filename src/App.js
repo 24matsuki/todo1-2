@@ -81,10 +81,14 @@ function App() {
     e.preventDefault();
 
     const updateTodos = todos.map((todo) => {
-      if (todo.key === currentTodo.key) {
-        todo.value = currentTodo.value;
-      }
-      return todo;
+      return todo.key === currentTodo.key ? (
+        {
+          ...todo,
+          value: currentTodo.value
+        }
+      ) : (
+        todo
+      )
     })
 
     setTodos(updateTodos);
