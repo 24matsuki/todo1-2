@@ -120,15 +120,13 @@ function App() {
           onHandleInputChange={handleInputChange}
         />
       )}
-      <ul>
-        <TodoList
-          todos={todos}
-          onHandleSelectChange={handleSelectChange}
-          todoStatuses={todoStatuses}
-          onHandleEditClick={handleEditClick}
-          onHandleDeleteClick={handleDeleteClick}
-        />
-      </ul>
+      <TodoList
+        todos={todos}
+        onHandleSelectChange={handleSelectChange}
+        todoStatuses={todoStatuses}
+        onHandleEditClick={handleEditClick}
+        onHandleDeleteClick={handleDeleteClick}
+      />
     </div>
   );
 }

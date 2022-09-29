@@ -2,7 +2,7 @@ export const TodoList = (props) => {
   const { todos, onHandleSelectChange, todoStatuses, onHandleEditClick, onHandleDeleteClick } = props;
 
   return (
-    <>
+    <ul>
       {todos.map((todo) => (
         <li key={todo.key}>
           <select onChange={(e) => onHandleSelectChange(todo.key, e.target.value)} >
@@ -24,6 +24,6 @@ export const TodoList = (props) => {
           </button>
         </li>
       ))}
-    </>
+    </ul>
   )
 }
